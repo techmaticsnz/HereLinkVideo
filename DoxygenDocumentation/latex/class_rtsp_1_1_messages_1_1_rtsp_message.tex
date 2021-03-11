@@ -1,0 +1,342 @@
+\hypertarget{class_rtsp_1_1_messages_1_1_rtsp_message}{}\doxysection{Rtsp.\+Messages.\+Rtsp\+Message Class Reference}
+\label{class_rtsp_1_1_messages_1_1_rtsp_message}\index{Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}}
+
+
+Inheritance diagram for Rtsp.\+Messages.\+Rtsp\+Message\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rtsp_1_1_messages_1_1_rtsp_message__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Rtsp.\+Messages.\+Rtsp\+Message\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{class_rtsp_1_1_messages_1_1_rtsp_message__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_message_ae4db1e31295de5d47f36b12ba06ea94d}{Rtsp\+Message}} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_message}{Rtsp\+Message}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_message_ace6f905aa214a1a8e614c8f85225d592}{Add\+Header}} (string line)
+\begin{DoxyCompactList}\small\item\em Adds one header from a string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_message_a9fd55efd5bba5d2b5816acfee8aaa35d}{Initialise\+Data\+From\+Content\+Length}} ()
+\begin{DoxyCompactList}\small\item\em Initialises the length of the data byte array from content lenth header. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_message_a506693682aa7a4d5a9e8bc96620dc8fa}{Adjust\+Content\+Length}} ()
+\begin{DoxyCompactList}\small\item\em Adjusts the content length header. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_message_a5991cce8702d9b8e3b9e300086964fd6}{Send\+To}} (\mbox{\hyperlink{_video_player_renderer_8cs_a1881e33d741b63d5d7c425375f6d5c8d}{Stream}} stream)
+\begin{DoxyCompactList}\small\item\em Sends to the message to a stream. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_message_a6dcc828cd2361c6fab345c6168565415}{Log\+Message}} (N\+Log.\+Log\+Level a\+Level)
+\begin{DoxyCompactList}\small\item\em Logs the message. \end{DoxyCompactList}\item 
+override object \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_message_af37fa6afaf3676fd970c0475f31245cc}{Clone}} ()
+\begin{DoxyCompactList}\small\item\em Crée un nouvel objet qui est une copie de l\textquotesingle{}instance en cours. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_message}{Rtsp\+Message}} \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_message_a41d0d2b28ac1f836f46e43791ec2d249}{Get\+Rtsp\+Message}} (string a\+Request\+Line)
+\begin{DoxyCompactList}\small\item\em Create the good type of \mbox{\hyperlink{namespace_rtsp}{Rtsp}} Message from the header. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_message_a103ef56776c452b92c3a2ced978b62f3}{command\+Array}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Date\+Time \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_message_a07bc1e17857f4f91fb831d57e22c0782}{Creation}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the creation time. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_message_a56acde94daad211ded80ae7d021f1542}{Command}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the command of the message (first line). \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_message_ad3b11209ed939a958ffd4a28da888e38}{Method}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the Method of the message (eg O\+P\+T\+I\+O\+NS, D\+E\+S\+C\+R\+I\+BE, S\+E\+T\+UP, P\+L\+AY). \end{DoxyCompactList}\item 
+Dictionary$<$ string, string $>$ \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_message_a5c93dd72e72bedb586d181d396eadbd4}{Headers}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the headers of the message. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_message_a913c583f51d52f3fb2025668565b103d}{C\+Seq}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the Ccommande Seqquence number. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_message_a6afc324ed7d21a92bc1d973faddc8fd7}{Session}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the session ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 11 of file R\+T\+S\+P\+Message.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_message_ae4db1e31295de5d47f36b12ba06ea94d}\label{class_rtsp_1_1_messages_1_1_rtsp_message_ae4db1e31295de5d47f36b12ba06ea94d}} 
+\index{Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}!RtspMessage@{RtspMessage}}
+\index{RtspMessage@{RtspMessage}!Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}}
+\doxysubsubsection{\texorpdfstring{RtspMessage()}{RtspMessage()}}
+{\footnotesize\ttfamily Rtsp.\+Messages.\+Rtsp\+Message.\+Rtsp\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_message}{Rtsp\+Message}} class. 
+
+
+
+Definition at line 58 of file R\+T\+S\+P\+Message.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_message_ace6f905aa214a1a8e614c8f85225d592}\label{class_rtsp_1_1_messages_1_1_rtsp_message_ace6f905aa214a1a8e614c8f85225d592}} 
+\index{Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}!AddHeader@{AddHeader}}
+\index{AddHeader@{AddHeader}!Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}}
+\doxysubsubsection{\texorpdfstring{AddHeader()}{AddHeader()}}
+{\footnotesize\ttfamily void Rtsp.\+Messages.\+Rtsp\+Message.\+Add\+Header (\begin{DoxyParamCaption}\item[{string}]{line }\end{DoxyParamCaption})}
+
+
+
+Adds one header from a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em line} & The string containing header of format Header\+: Value.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Null\+Exception} & {\itshape line}  is null\\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 128 of file R\+T\+S\+P\+Message.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_message_a506693682aa7a4d5a9e8bc96620dc8fa}\label{class_rtsp_1_1_messages_1_1_rtsp_message_a506693682aa7a4d5a9e8bc96620dc8fa}} 
+\index{Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}!AdjustContentLength@{AdjustContentLength}}
+\index{AdjustContentLength@{AdjustContentLength}!Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}}
+\doxysubsubsection{\texorpdfstring{AdjustContentLength()}{AdjustContentLength()}}
+{\footnotesize\ttfamily void Rtsp.\+Messages.\+Rtsp\+Message.\+Adjust\+Content\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adjusts the content length header. 
+
+
+
+Definition at line 204 of file R\+T\+S\+P\+Message.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_message_af37fa6afaf3676fd970c0475f31245cc}\label{class_rtsp_1_1_messages_1_1_rtsp_message_af37fa6afaf3676fd970c0475f31245cc}} 
+\index{Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}!Clone@{Clone}}
+\index{Clone@{Clone}!Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}}
+\doxysubsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily override object Rtsp.\+Messages.\+Rtsp\+Message.\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Crée un nouvel objet qui est une copie de l\textquotesingle{}instance en cours. 
+
+\begin{DoxyReturn}{Returns}
+Nouvel objet qui est une copie de cette instance. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_chunk_a0709fdb8d493d4ce314ea8e41218782d}{Rtsp.\+Messages.\+Rtsp\+Chunk}}.
+
+
+
+Definition at line 291 of file R\+T\+S\+P\+Message.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_message_a41d0d2b28ac1f836f46e43791ec2d249}\label{class_rtsp_1_1_messages_1_1_rtsp_message_a41d0d2b28ac1f836f46e43791ec2d249}} 
+\index{Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}!GetRtspMessage@{GetRtspMessage}}
+\index{GetRtspMessage@{GetRtspMessage}!Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}}
+\doxysubsubsection{\texorpdfstring{GetRtspMessage()}{GetRtspMessage()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_message}{Rtsp\+Message}} Rtsp.\+Messages.\+Rtsp\+Message.\+Get\+Rtsp\+Message (\begin{DoxyParamCaption}\item[{string}]{a\+Request\+Line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create the good type of \mbox{\hyperlink{namespace_rtsp}{Rtsp}} Message from the header. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Request\+Line} & A request line.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An \mbox{\hyperlink{namespace_rtsp}{Rtsp}} message
+\end{DoxyReturn}
+
+
+Definition at line 24 of file R\+T\+S\+P\+Message.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_message_a9fd55efd5bba5d2b5816acfee8aaa35d}\label{class_rtsp_1_1_messages_1_1_rtsp_message_a9fd55efd5bba5d2b5816acfee8aaa35d}} 
+\index{Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}!InitialiseDataFromContentLength@{InitialiseDataFromContentLength}}
+\index{InitialiseDataFromContentLength@{InitialiseDataFromContentLength}!Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}}
+\doxysubsubsection{\texorpdfstring{InitialiseDataFromContentLength()}{InitialiseDataFromContentLength()}}
+{\footnotesize\ttfamily void Rtsp.\+Messages.\+Rtsp\+Message.\+Initialise\+Data\+From\+Content\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialises the length of the data byte array from content lenth header. 
+
+
+
+Definition at line 190 of file R\+T\+S\+P\+Message.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_message_a6dcc828cd2361c6fab345c6168565415}\label{class_rtsp_1_1_messages_1_1_rtsp_message_a6dcc828cd2361c6fab345c6168565415}} 
+\index{Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}!LogMessage@{LogMessage}}
+\index{LogMessage@{LogMessage}!Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}}
+\doxysubsubsection{\texorpdfstring{LogMessage()}{LogMessage()}}
+{\footnotesize\ttfamily override void Rtsp.\+Messages.\+Rtsp\+Message.\+Log\+Message (\begin{DoxyParamCaption}\item[{N\+Log.\+Log\+Level}]{a\+Level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Logs the message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Level} & A log level.\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_chunk_a487252e7f05c8c5fa52c00fe7abffbe8}{Rtsp.\+Messages.\+Rtsp\+Chunk}}.
+
+
+
+Definition at line 264 of file R\+T\+S\+P\+Message.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_message_a5991cce8702d9b8e3b9e300086964fd6}\label{class_rtsp_1_1_messages_1_1_rtsp_message_a5991cce8702d9b8e3b9e300086964fd6}} 
+\index{Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}!SendTo@{SendTo}}
+\index{SendTo@{SendTo}!Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}}
+\doxysubsubsection{\texorpdfstring{SendTo()}{SendTo()}}
+{\footnotesize\ttfamily void Rtsp.\+Messages.\+Rtsp\+Message.\+Send\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_video_player_renderer_8cs_a1881e33d741b63d5d7c425375f6d5c8d}{Stream}}}]{stream }\end{DoxyParamCaption})}
+
+
+
+Sends to the message to a stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & The stream.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Null\+Exception} & {\itshape stream}  is empty\\
+\hline
+{\em Argument\+Exception} & {\itshape stream}  can\textquotesingle{}t be written.\\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 222 of file R\+T\+S\+P\+Message.\+cs.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_message_a103ef56776c452b92c3a2ced978b62f3}\label{class_rtsp_1_1_messages_1_1_rtsp_message_a103ef56776c452b92c3a2ced978b62f3}} 
+\index{Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}!commandArray@{commandArray}}
+\index{commandArray@{commandArray}!Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}}
+\doxysubsubsection{\texorpdfstring{commandArray}{commandArray}}
+{\footnotesize\ttfamily string \mbox{[}$\,$\mbox{]} Rtsp.\+Messages.\+Rtsp\+Message.\+command\+Array\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 66 of file R\+T\+S\+P\+Message.\+cs.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_message_a56acde94daad211ded80ae7d021f1542}\label{class_rtsp_1_1_messages_1_1_rtsp_message_a56acde94daad211ded80ae7d021f1542}} 
+\index{Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}!Command@{Command}}
+\index{Command@{Command}!Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}}
+\doxysubsubsection{\texorpdfstring{Command}{Command}}
+{\footnotesize\ttfamily string Rtsp.\+Messages.\+Rtsp\+Message.\+Command\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the command of the message (first line). 
+
+The command.
+
+Definition at line 79 of file R\+T\+S\+P\+Message.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_message_a07bc1e17857f4f91fb831d57e22c0782}\label{class_rtsp_1_1_messages_1_1_rtsp_message_a07bc1e17857f4f91fb831d57e22c0782}} 
+\index{Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}!Creation@{Creation}}
+\index{Creation@{Creation}!Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}}
+\doxysubsubsection{\texorpdfstring{Creation}{Creation}}
+{\footnotesize\ttfamily Date\+Time Rtsp.\+Messages.\+Rtsp\+Message.\+Creation\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets or sets the creation time. 
+
+The creation time.
+
+Definition at line 72 of file R\+T\+S\+P\+Message.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_message_a913c583f51d52f3fb2025668565b103d}\label{class_rtsp_1_1_messages_1_1_rtsp_message_a913c583f51d52f3fb2025668565b103d}} 
+\index{Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}!CSeq@{CSeq}}
+\index{CSeq@{CSeq}!Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}}
+\doxysubsubsection{\texorpdfstring{CSeq}{CSeq}}
+{\footnotesize\ttfamily int Rtsp.\+Messages.\+Rtsp\+Message.\+C\+Seq\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the Ccommande Seqquence number. 
+
+If the header is not define or not a valid number it return 0
+
+The sequence number.
+
+Definition at line 151 of file R\+T\+S\+P\+Message.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_message_a5c93dd72e72bedb586d181d396eadbd4}\label{class_rtsp_1_1_messages_1_1_rtsp_message_a5c93dd72e72bedb586d181d396eadbd4}} 
+\index{Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}!Headers@{Headers}}
+\index{Headers@{Headers}!Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}}
+\doxysubsubsection{\texorpdfstring{Headers}{Headers}}
+{\footnotesize\ttfamily Dictionary$<$string, string$>$ Rtsp.\+Messages.\+Rtsp\+Message.\+Headers\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the headers of the message. 
+
+The headers.
+
+Definition at line 116 of file R\+T\+S\+P\+Message.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_message_ad3b11209ed939a958ffd4a28da888e38}\label{class_rtsp_1_1_messages_1_1_rtsp_message_ad3b11209ed939a958ffd4a28da888e38}} 
+\index{Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}!Method@{Method}}
+\index{Method@{Method}!Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}}
+\doxysubsubsection{\texorpdfstring{Method}{Method}}
+{\footnotesize\ttfamily string Rtsp.\+Messages.\+Rtsp\+Message.\+Method\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the Method of the message (eg O\+P\+T\+I\+O\+NS, D\+E\+S\+C\+R\+I\+BE, S\+E\+T\+UP, P\+L\+AY). 
+
+The Method
+
+Definition at line 101 of file R\+T\+S\+P\+Message.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_message_a6afc324ed7d21a92bc1d973faddc8fd7}\label{class_rtsp_1_1_messages_1_1_rtsp_message_a6afc324ed7d21a92bc1d973faddc8fd7}} 
+\index{Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}!Session@{Session}}
+\index{Session@{Session}!Rtsp.Messages.RtspMessage@{Rtsp.Messages.RtspMessage}}
+\doxysubsubsection{\texorpdfstring{Session}{Session}}
+{\footnotesize\ttfamily virtual string Rtsp.\+Messages.\+Rtsp\+Message.\+Session\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets the session ID. 
+
+The session ID.
+
+Definition at line 173 of file R\+T\+S\+P\+Message.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Here\+Link\+Video/\+R\+T\+S\+P/\+Messages/\mbox{\hyperlink{_r_t_s_p_message_8cs}{R\+T\+S\+P\+Message.\+cs}}\end{DoxyCompactItemize}

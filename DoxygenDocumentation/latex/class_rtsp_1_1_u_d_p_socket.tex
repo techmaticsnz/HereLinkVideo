@@ -1,0 +1,195 @@
+\hypertarget{class_rtsp_1_1_u_d_p_socket}{}\doxysection{Rtsp.\+U\+D\+P\+Socket Class Reference}
+\label{class_rtsp_1_1_u_d_p_socket}\index{Rtsp.UDPSocket@{Rtsp.UDPSocket}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_rtsp_1_1_u_d_p_socket_aa5b8604bed23e80e5fc191dde81b6b83}{U\+D\+P\+Socket}} (int start\+\_\+port, int end\+\_\+port)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \mbox{\hyperlink{class_rtsp_1_1_u_d_p_socket}{U\+D\+P\+Socket}} class. Creates two new U\+DP sockets using the start and end Port range \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rtsp_1_1_u_d_p_socket_ad85a8143e864e6c6a0d2da208c317706}{U\+D\+P\+Socket}} (String data\+\_\+multicast\+\_\+address, int data\+\_\+multicast\+\_\+port, String control\+\_\+multicast\+\_\+address, int control\+\_\+multicast\+\_\+port)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \mbox{\hyperlink{class_rtsp_1_1_u_d_p_socket}{U\+D\+P\+Socket}} class. Used with Multicast mode with the Multicast Address and Port \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rtsp_1_1_u_d_p_socket_acdc77f2a0acaaa426be0d88bdd074b60}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Starts this instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rtsp_1_1_u_d_p_socket_ab93cc0ee23c4d9011268efe2e40f9d03}{Stop}} ()
+\begin{DoxyCompactList}\small\item\em Stops this instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rtsp_1_1_u_d_p_socket_a7d092b1c9d666338e1a6abf079d4fc48}{Write\+\_\+\+To\+\_\+\+Data\+\_\+\+Port}} (byte\mbox{[}$\,$\mbox{]} data, String hostname, int port)
+\begin{DoxyCompactList}\small\item\em Write to the R\+TP Data Port \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rtsp_1_1_u_d_p_socket_aa14febe3b5b87abf4ecd2186cde4e840}{Write\+\_\+\+To\+\_\+\+Control\+\_\+\+Port}} (byte\mbox{[}$\,$\mbox{]} data, String hostname, int port)
+\begin{DoxyCompactList}\small\item\em Write to the R\+TP Control Port \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_rtsp_1_1_u_d_p_socket_a20a4cad4250fb8ef66ab23fa57f245ea}{data\+\_\+port}} = 50000
+\item 
+int \mbox{\hyperlink{class_rtsp_1_1_u_d_p_socket_a0aafd5aac1f224c9177ec360ee1b33d8}{control\+\_\+port}} = 50001
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_rtsp_1_1_u_d_p_socket_a470285f2b42a5636ec473d3c1b1d4dd7}{On\+Data\+Received}} (\mbox{\hyperlink{class_rtsp_1_1_rtsp_chunk_event_args}{Rtsp.\+Rtsp\+Chunk\+Event\+Args}} rtsp\+Chunk\+Event\+Args)
+\begin{DoxyCompactList}\small\item\em Raises the E\+:\+Data\+Received event. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Event\+Handler$<$ \mbox{\hyperlink{class_rtsp_1_1_rtsp_chunk_event_args}{Rtsp.\+Rtsp\+Chunk\+Event\+Args}} $>$ \mbox{\hyperlink{class_rtsp_1_1_u_d_p_socket_a7f6969eac78b5827369c1ccc32d5578c}{Data\+Received}}
+\begin{DoxyCompactList}\small\item\em Occurs when message is received. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 8 of file Udp\+Socket.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_rtsp_1_1_u_d_p_socket_aa5b8604bed23e80e5fc191dde81b6b83}\label{class_rtsp_1_1_u_d_p_socket_aa5b8604bed23e80e5fc191dde81b6b83}} 
+\index{Rtsp.UDPSocket@{Rtsp.UDPSocket}!UDPSocket@{UDPSocket}}
+\index{UDPSocket@{UDPSocket}!Rtsp.UDPSocket@{Rtsp.UDPSocket}}
+\doxysubsubsection{\texorpdfstring{UDPSocket()}{UDPSocket()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Rtsp.\+U\+D\+P\+Socket.\+U\+D\+P\+Socket (\begin{DoxyParamCaption}\item[{int}]{start\+\_\+port,  }\item[{int}]{end\+\_\+port }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \mbox{\hyperlink{class_rtsp_1_1_u_d_p_socket}{U\+D\+P\+Socket}} class. Creates two new U\+DP sockets using the start and end Port range 
+
+
+
+Definition at line 28 of file Udp\+Socket.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_u_d_p_socket_ad85a8143e864e6c6a0d2da208c317706}\label{class_rtsp_1_1_u_d_p_socket_ad85a8143e864e6c6a0d2da208c317706}} 
+\index{Rtsp.UDPSocket@{Rtsp.UDPSocket}!UDPSocket@{UDPSocket}}
+\index{UDPSocket@{UDPSocket}!Rtsp.UDPSocket@{Rtsp.UDPSocket}}
+\doxysubsubsection{\texorpdfstring{UDPSocket()}{UDPSocket()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Rtsp.\+U\+D\+P\+Socket.\+U\+D\+P\+Socket (\begin{DoxyParamCaption}\item[{String}]{data\+\_\+multicast\+\_\+address,  }\item[{int}]{data\+\_\+multicast\+\_\+port,  }\item[{String}]{control\+\_\+multicast\+\_\+address,  }\item[{int}]{control\+\_\+multicast\+\_\+port }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \mbox{\hyperlink{class_rtsp_1_1_u_d_p_socket}{U\+D\+P\+Socket}} class. Used with Multicast mode with the Multicast Address and Port 
+
+
+
+Definition at line 76 of file Udp\+Socket.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_rtsp_1_1_u_d_p_socket_a470285f2b42a5636ec473d3c1b1d4dd7}\label{class_rtsp_1_1_u_d_p_socket_a470285f2b42a5636ec473d3c1b1d4dd7}} 
+\index{Rtsp.UDPSocket@{Rtsp.UDPSocket}!OnDataReceived@{OnDataReceived}}
+\index{OnDataReceived@{OnDataReceived}!Rtsp.UDPSocket@{Rtsp.UDPSocket}}
+\doxysubsubsection{\texorpdfstring{OnDataReceived()}{OnDataReceived()}}
+{\footnotesize\ttfamily void Rtsp.\+U\+D\+P\+Socket.\+On\+Data\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_rtsp_1_1_rtsp_chunk_event_args}{Rtsp.\+Rtsp\+Chunk\+Event\+Args}}}]{rtsp\+Chunk\+Event\+Args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Raises the E\+:\+Data\+Received event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rtsp\+Chunk\+Event\+Args} & The \mbox{\hyperlink{class_rtsp_1_1_rtsp_chunk_event_args}{Rtsp.\+Rtsp\+Chunk\+Event\+Args}} instance containing the event data.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 169 of file Udp\+Socket.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_u_d_p_socket_acdc77f2a0acaaa426be0d88bdd074b60}\label{class_rtsp_1_1_u_d_p_socket_acdc77f2a0acaaa426be0d88bdd074b60}} 
+\index{Rtsp.UDPSocket@{Rtsp.UDPSocket}!Start@{Start}}
+\index{Start@{Start}!Rtsp.UDPSocket@{Rtsp.UDPSocket}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Rtsp.\+U\+D\+P\+Socket.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts this instance. 
+
+
+
+Definition at line 124 of file Udp\+Socket.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_u_d_p_socket_ab93cc0ee23c4d9011268efe2e40f9d03}\label{class_rtsp_1_1_u_d_p_socket_ab93cc0ee23c4d9011268efe2e40f9d03}} 
+\index{Rtsp.UDPSocket@{Rtsp.UDPSocket}!Stop@{Stop}}
+\index{Stop@{Stop}!Rtsp.UDPSocket@{Rtsp.UDPSocket}}
+\doxysubsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily void Rtsp.\+U\+D\+P\+Socket.\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stops this instance. 
+
+
+
+Definition at line 148 of file Udp\+Socket.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_u_d_p_socket_aa14febe3b5b87abf4ecd2186cde4e840}\label{class_rtsp_1_1_u_d_p_socket_aa14febe3b5b87abf4ecd2186cde4e840}} 
+\index{Rtsp.UDPSocket@{Rtsp.UDPSocket}!Write\_To\_Control\_Port@{Write\_To\_Control\_Port}}
+\index{Write\_To\_Control\_Port@{Write\_To\_Control\_Port}!Rtsp.UDPSocket@{Rtsp.UDPSocket}}
+\doxysubsubsection{\texorpdfstring{Write\_To\_Control\_Port()}{Write\_To\_Control\_Port()}}
+{\footnotesize\ttfamily void Rtsp.\+U\+D\+P\+Socket.\+Write\+\_\+\+To\+\_\+\+Control\+\_\+\+Port (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{data,  }\item[{String}]{hostname,  }\item[{int}]{port }\end{DoxyParamCaption})}
+
+
+
+Write to the R\+TP Control Port 
+
+
+
+Definition at line 224 of file Udp\+Socket.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_u_d_p_socket_a7d092b1c9d666338e1a6abf079d4fc48}\label{class_rtsp_1_1_u_d_p_socket_a7d092b1c9d666338e1a6abf079d4fc48}} 
+\index{Rtsp.UDPSocket@{Rtsp.UDPSocket}!Write\_To\_Data\_Port@{Write\_To\_Data\_Port}}
+\index{Write\_To\_Data\_Port@{Write\_To\_Data\_Port}!Rtsp.UDPSocket@{Rtsp.UDPSocket}}
+\doxysubsubsection{\texorpdfstring{Write\_To\_Data\_Port()}{Write\_To\_Data\_Port()}}
+{\footnotesize\ttfamily void Rtsp.\+U\+D\+P\+Socket.\+Write\+\_\+\+To\+\_\+\+Data\+\_\+\+Port (\begin{DoxyParamCaption}\item[{byte\mbox{[}$\,$\mbox{]}}]{data,  }\item[{String}]{hostname,  }\item[{int}]{port }\end{DoxyParamCaption})}
+
+
+
+Write to the R\+TP Data Port 
+
+
+
+Definition at line 217 of file Udp\+Socket.\+cs.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_rtsp_1_1_u_d_p_socket_a0aafd5aac1f224c9177ec360ee1b33d8}\label{class_rtsp_1_1_u_d_p_socket_a0aafd5aac1f224c9177ec360ee1b33d8}} 
+\index{Rtsp.UDPSocket@{Rtsp.UDPSocket}!control\_port@{control\_port}}
+\index{control\_port@{control\_port}!Rtsp.UDPSocket@{Rtsp.UDPSocket}}
+\doxysubsubsection{\texorpdfstring{control\_port}{control\_port}}
+{\footnotesize\ttfamily int Rtsp.\+U\+D\+P\+Socket.\+control\+\_\+port = 50001}
+
+
+
+Definition at line 18 of file Udp\+Socket.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_u_d_p_socket_a20a4cad4250fb8ef66ab23fa57f245ea}\label{class_rtsp_1_1_u_d_p_socket_a20a4cad4250fb8ef66ab23fa57f245ea}} 
+\index{Rtsp.UDPSocket@{Rtsp.UDPSocket}!data\_port@{data\_port}}
+\index{data\_port@{data\_port}!Rtsp.UDPSocket@{Rtsp.UDPSocket}}
+\doxysubsubsection{\texorpdfstring{data\_port}{data\_port}}
+{\footnotesize\ttfamily int Rtsp.\+U\+D\+P\+Socket.\+data\+\_\+port = 50000}
+
+
+
+Definition at line 17 of file Udp\+Socket.\+cs.
+
+
+
+\doxysubsection{Event Documentation}
+\mbox{\Hypertarget{class_rtsp_1_1_u_d_p_socket_a7f6969eac78b5827369c1ccc32d5578c}\label{class_rtsp_1_1_u_d_p_socket_a7f6969eac78b5827369c1ccc32d5578c}} 
+\index{Rtsp.UDPSocket@{Rtsp.UDPSocket}!DataReceived@{DataReceived}}
+\index{DataReceived@{DataReceived}!Rtsp.UDPSocket@{Rtsp.UDPSocket}}
+\doxysubsubsection{\texorpdfstring{DataReceived}{DataReceived}}
+{\footnotesize\ttfamily Event\+Handler$<$\mbox{\hyperlink{class_rtsp_1_1_rtsp_chunk_event_args}{Rtsp.\+Rtsp\+Chunk\+Event\+Args}}$>$ Rtsp.\+U\+D\+P\+Socket.\+Data\+Received}
+
+
+
+Occurs when message is received. 
+
+
+
+Definition at line 163 of file Udp\+Socket.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Here\+Link\+Video/\+R\+T\+S\+P/\mbox{\hyperlink{_udp_socket_8cs}{Udp\+Socket.\+cs}}\end{DoxyCompactItemize}

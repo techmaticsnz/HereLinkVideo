@@ -1,0 +1,135 @@
+\hypertarget{class_forms_video_library_1_1_position_slider}{}\doxysection{Forms\+Video\+Library.\+Position\+Slider Class Reference}
+\label{class_forms_video_library_1_1_position_slider}\index{FormsVideoLibrary.PositionSlider@{FormsVideoLibrary.PositionSlider}}
+
+
+Inheritance diagram for Forms\+Video\+Library.\+Position\+Slider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{class_forms_video_library_1_1_position_slider__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Forms\+Video\+Library.\+Position\+Slider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{class_forms_video_library_1_1_position_slider__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_forms_video_library_1_1_position_slider_a402585169436c82a37dfe15da9462a80}{Position\+Slider}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static readonly Bindable\+Property \mbox{\hyperlink{class_forms_video_library_1_1_position_slider_a70ef896c22225442579596a37d024859}{Duration\+Property}}
+\item 
+static readonly Bindable\+Property \mbox{\hyperlink{class_forms_video_library_1_1_position_slider_ae04977353457cce75b05f13a7779787f}{Position\+Property}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Time\+Span \mbox{\hyperlink{class_forms_video_library_1_1_position_slider_a27bcffc69d6b1b0267a0a4477c8f0360}{Duration}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+Time\+Span \mbox{\hyperlink{class_forms_video_library_1_1_position_slider_a058955fbcee9a6ebf29bd68f5411a4fc}{Position}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 6 of file Position\+Slider.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_forms_video_library_1_1_position_slider_a402585169436c82a37dfe15da9462a80}\label{class_forms_video_library_1_1_position_slider_a402585169436c82a37dfe15da9462a80}} 
+\index{FormsVideoLibrary.PositionSlider@{FormsVideoLibrary.PositionSlider}!PositionSlider@{PositionSlider}}
+\index{PositionSlider@{PositionSlider}!FormsVideoLibrary.PositionSlider@{FormsVideoLibrary.PositionSlider}}
+\doxysubsubsection{\texorpdfstring{PositionSlider()}{PositionSlider()}}
+{\footnotesize\ttfamily Forms\+Video\+Library.\+Position\+Slider.\+Position\+Slider (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 37 of file Position\+Slider.\+cs.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_forms_video_library_1_1_position_slider_a70ef896c22225442579596a37d024859}\label{class_forms_video_library_1_1_position_slider_a70ef896c22225442579596a37d024859}} 
+\index{FormsVideoLibrary.PositionSlider@{FormsVideoLibrary.PositionSlider}!DurationProperty@{DurationProperty}}
+\index{DurationProperty@{DurationProperty}!FormsVideoLibrary.PositionSlider@{FormsVideoLibrary.PositionSlider}}
+\doxysubsubsection{\texorpdfstring{DurationProperty}{DurationProperty}}
+{\footnotesize\ttfamily readonly Bindable\+Property Forms\+Video\+Library.\+Position\+Slider.\+Duration\+Property\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{            BindableProperty.Create(nameof(\mbox{\hyperlink{class_forms_video_library_1_1_position_slider_a27bcffc69d6b1b0267a0a4477c8f0360}{Duration}}), typeof(TimeSpan), typeof(\mbox{\hyperlink{class_forms_video_library_1_1_position_slider_a402585169436c82a37dfe15da9462a80}{PositionSlider}}), \textcolor{keyword}{new} TimeSpan(1),}
+\DoxyCodeLine{                                    propertyChanged: (bindable, oldValue, newValue) =>}
+\DoxyCodeLine{                                    \{}
+\DoxyCodeLine{                                        \textcolor{keywordtype}{double} seconds = ((TimeSpan)newValue).TotalSeconds;}
+\DoxyCodeLine{                                        ((Slider)bindable).Maximum = seconds <= 0 ? 1 : seconds; }
+\DoxyCodeLine{                                    \})}
+
+\end{DoxyCode}
+
+
+Definition at line 8 of file Position\+Slider.\+cs.
+
+\mbox{\Hypertarget{class_forms_video_library_1_1_position_slider_ae04977353457cce75b05f13a7779787f}\label{class_forms_video_library_1_1_position_slider_ae04977353457cce75b05f13a7779787f}} 
+\index{FormsVideoLibrary.PositionSlider@{FormsVideoLibrary.PositionSlider}!PositionProperty@{PositionProperty}}
+\index{PositionProperty@{PositionProperty}!FormsVideoLibrary.PositionSlider@{FormsVideoLibrary.PositionSlider}}
+\doxysubsubsection{\texorpdfstring{PositionProperty}{PositionProperty}}
+{\footnotesize\ttfamily readonly Bindable\+Property Forms\+Video\+Library.\+Position\+Slider.\+Position\+Property\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{            BindableProperty.Create(nameof(\mbox{\hyperlink{class_forms_video_library_1_1_position_slider_a058955fbcee9a6ebf29bd68f5411a4fc}{Position}}), typeof(TimeSpan), typeof(\mbox{\hyperlink{class_forms_video_library_1_1_position_slider_a402585169436c82a37dfe15da9462a80}{PositionSlider}}), \textcolor{keyword}{new} TimeSpan(0),}
+\DoxyCodeLine{                                    defaultBindingMode: BindingMode.TwoWay,}
+\DoxyCodeLine{                                    propertyChanged: (bindable, oldValue, newValue) =>}
+\DoxyCodeLine{                                    \{}
+\DoxyCodeLine{                                        double seconds = ((TimeSpan)newValue).TotalSeconds;}
+\DoxyCodeLine{                                        ((Slider)bindable).Value = seconds;}
+\DoxyCodeLine{                                    \})}
+
+\end{DoxyCode}
+
+
+Definition at line 22 of file Position\+Slider.\+cs.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_forms_video_library_1_1_position_slider_a27bcffc69d6b1b0267a0a4477c8f0360}\label{class_forms_video_library_1_1_position_slider_a27bcffc69d6b1b0267a0a4477c8f0360}} 
+\index{FormsVideoLibrary.PositionSlider@{FormsVideoLibrary.PositionSlider}!Duration@{Duration}}
+\index{Duration@{Duration}!FormsVideoLibrary.PositionSlider@{FormsVideoLibrary.PositionSlider}}
+\doxysubsubsection{\texorpdfstring{Duration}{Duration}}
+{\footnotesize\ttfamily Time\+Span Forms\+Video\+Library.\+Position\+Slider.\+Duration\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 17 of file Position\+Slider.\+cs.
+
+\mbox{\Hypertarget{class_forms_video_library_1_1_position_slider_a058955fbcee9a6ebf29bd68f5411a4fc}\label{class_forms_video_library_1_1_position_slider_a058955fbcee9a6ebf29bd68f5411a4fc}} 
+\index{FormsVideoLibrary.PositionSlider@{FormsVideoLibrary.PositionSlider}!Position@{Position}}
+\index{Position@{Position}!FormsVideoLibrary.PositionSlider@{FormsVideoLibrary.PositionSlider}}
+\doxysubsubsection{\texorpdfstring{Position}{Position}}
+{\footnotesize\ttfamily Time\+Span Forms\+Video\+Library.\+Position\+Slider.\+Position\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Definition at line 32 of file Position\+Slider.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Here\+Link\+Video/\+Forms\+Video\+Library/\mbox{\hyperlink{_position_slider_8cs}{Position\+Slider.\+cs}}\end{DoxyCompactItemize}

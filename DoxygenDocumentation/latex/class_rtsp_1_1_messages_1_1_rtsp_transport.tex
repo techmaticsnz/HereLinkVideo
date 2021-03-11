@@ -1,0 +1,412 @@
+\hypertarget{class_rtsp_1_1_messages_1_1_rtsp_transport}{}\doxysection{Rtsp.\+Messages.\+Rtsp\+Transport Class Reference}
+\label{class_rtsp_1_1_messages_1_1_rtsp_transport}\index{Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_abb68f4916a378efa839a608223cb95b9}{Transport\+Type}} \{ \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_abb68f4916a378efa839a608223cb95b9af82a692bd388b13723eef7a7f0fba8f5}{Transport\+Type.\+R\+TP}}
+ \}
+\begin{DoxyCompactList}\small\item\em List of transport \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_a44b6e1f08691810251af000a64908857}{Profile\+Type}} \{ \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_a44b6e1f08691810251af000a64908857a75369766cca186b69524a0829771ab62}{Profile\+Type.\+A\+VP}}
+ \}
+\begin{DoxyCompactList}\small\item\em Profile type \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_a14df0494e25631d755b1e0d90f549f9e}{Lower\+Transport\+Type}} \{ \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_a14df0494e25631d755b1e0d90f549f9eaf5ef036b4d8b630721e51fe23489fbc9}{Lower\+Transport\+Type.\+U\+DP}}, 
+\mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_a14df0494e25631d755b1e0d90f549f9eab136ef5f6a01d816991fe3cf7a6ac763}{Lower\+Transport\+Type.\+T\+CP}}
+ \}
+\begin{DoxyCompactList}\small\item\em Transport type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_ac4d7ee0cbfac8b3b0c208304690f313f}{Rtsp\+Transport}} ()
+\item 
+override string \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_af357d91e115a38863ab7623264594d1f}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Returns a System.\+String that represents this instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport}{Rtsp\+Transport}} \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_a330278e53a6adb6a86182edc20814783}{Parse}} (string a\+Transport\+String)
+\begin{DoxyCompactList}\small\item\em Parses the specified transport string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_abb68f4916a378efa839a608223cb95b9}{Transport\+Type}} \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_a9f72d8b1f2b2a1f58d3487d17f4c0548}{Transport}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the transport. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_a44b6e1f08691810251af000a64908857}{Profile\+Type}} \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_a19ac308c698c10f4e7f14533e4ebb5a4}{Profile}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the profile. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_a14df0494e25631d755b1e0d90f549f9e}{Lower\+Transport\+Type}} \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_a09da205a09c0710f2c2c2cbacb2419a6}{Lower\+Transport}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the lower transport. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_a0ec9a01954319b71310f26d55436455a}{Is\+Multicast}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value indicating whether this instance is multicast. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_abdd20ebbf17ba68401603dd8ca35c94f}{Destination}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the destination. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_a4da47d41917141296015ca76aeecfb4d}{Source}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the source. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rtsp_1_1_messages_1_1_port_couple}{Port\+Couple}} \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_a6d56eec32953f3c57eff15d1715c2e24}{Interleaved}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the interleaved. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_a07aff1b8f962262c076b99f023ca62ef}{Is\+Append}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets a value indicating whether this instance is append. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_a3288a50f8fcc4967b585a9dc4c48ffd2}{T\+TL}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the T\+TL. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_a3023c32195dab7d2540f2815bc0aee03}{Layers}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the layers. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rtsp_1_1_messages_1_1_port_couple}{Port\+Couple}} \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_a94c531d96e2514eeb847760a87d26334}{Port}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the port. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rtsp_1_1_messages_1_1_port_couple}{Port\+Couple}} \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_a3c9fcef67685668714c6967817e767d5}{Client\+Port}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the client port. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rtsp_1_1_messages_1_1_port_couple}{Port\+Couple}} \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_aa1f8afc15728f08d6282389a76ae1ebf}{Server\+Port}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the server port. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_a78be3cf648061b540d97efbc67f45212}{S\+Src}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the S S\+RC. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_a45920cee9293c0b0f4f40f5834473cd9}{Mode}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 10 of file R\+T\+S\+P\+Transport.\+cs.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_transport_a14df0494e25631d755b1e0d90f549f9e}\label{class_rtsp_1_1_messages_1_1_rtsp_transport_a14df0494e25631d755b1e0d90f549f9e}} 
+\index{Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}!LowerTransportType@{LowerTransportType}}
+\index{LowerTransportType@{LowerTransportType}!Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}}
+\doxysubsubsection{\texorpdfstring{LowerTransportType}{LowerTransportType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_a14df0494e25631d755b1e0d90f549f9e}{Rtsp.\+Messages.\+Rtsp\+Transport.\+Lower\+Transport\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Transport type. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UDP@{UDP}!Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}}\index{Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}!UDP@{UDP}}}\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_transport_a14df0494e25631d755b1e0d90f549f9eaf5ef036b4d8b630721e51fe23489fbc9}\label{class_rtsp_1_1_messages_1_1_rtsp_transport_a14df0494e25631d755b1e0d90f549f9eaf5ef036b4d8b630721e51fe23489fbc9}} 
+U\+DP&U\+DP transport. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TCP@{TCP}!Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}}\index{Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}!TCP@{TCP}}}\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_transport_a14df0494e25631d755b1e0d90f549f9eab136ef5f6a01d816991fe3cf7a6ac763}\label{class_rtsp_1_1_messages_1_1_rtsp_transport_a14df0494e25631d755b1e0d90f549f9eab136ef5f6a01d816991fe3cf7a6ac763}} 
+T\+CP&T\+CP transport. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 75 of file R\+T\+S\+P\+Transport.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_transport_a44b6e1f08691810251af000a64908857}\label{class_rtsp_1_1_messages_1_1_rtsp_transport_a44b6e1f08691810251af000a64908857}} 
+\index{Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}!ProfileType@{ProfileType}}
+\index{ProfileType@{ProfileType}!Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}}
+\doxysubsubsection{\texorpdfstring{ProfileType}{ProfileType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_a44b6e1f08691810251af000a64908857}{Rtsp.\+Messages.\+Rtsp\+Transport.\+Profile\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Profile type 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AVP@{AVP}!Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}}\index{Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}!AVP@{AVP}}}\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_transport_a44b6e1f08691810251af000a64908857a75369766cca186b69524a0829771ab62}\label{class_rtsp_1_1_messages_1_1_rtsp_transport_a44b6e1f08691810251af000a64908857a75369766cca186b69524a0829771ab62}} 
+A\+VP&R\+T\+P/\+A\+VP of now \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 63 of file R\+T\+S\+P\+Transport.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_transport_abb68f4916a378efa839a608223cb95b9}\label{class_rtsp_1_1_messages_1_1_rtsp_transport_abb68f4916a378efa839a608223cb95b9}} 
+\index{Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}!TransportType@{TransportType}}
+\index{TransportType@{TransportType}!Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}}
+\doxysubsubsection{\texorpdfstring{TransportType}{TransportType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_abb68f4916a378efa839a608223cb95b9}{Rtsp.\+Messages.\+Rtsp\+Transport.\+Transport\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+List of transport 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RTP@{RTP}!Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}}\index{Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}!RTP@{RTP}}}\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_transport_abb68f4916a378efa839a608223cb95b9af82a692bd388b13723eef7a7f0fba8f5}\label{class_rtsp_1_1_messages_1_1_rtsp_transport_abb68f4916a378efa839a608223cb95b9af82a692bd388b13723eef7a7f0fba8f5}} 
+R\+TP&R\+TP for now \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 51 of file R\+T\+S\+P\+Transport.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_transport_ac4d7ee0cbfac8b3b0c208304690f313f}\label{class_rtsp_1_1_messages_1_1_rtsp_transport_ac4d7ee0cbfac8b3b0c208304690f313f}} 
+\index{Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}!RtspTransport@{RtspTransport}}
+\index{RtspTransport@{RtspTransport}!Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}}
+\doxysubsubsection{\texorpdfstring{RtspTransport()}{RtspTransport()}}
+{\footnotesize\ttfamily Rtsp.\+Messages.\+Rtsp\+Transport.\+Rtsp\+Transport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 12 of file R\+T\+S\+P\+Transport.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_transport_a330278e53a6adb6a86182edc20814783}\label{class_rtsp_1_1_messages_1_1_rtsp_transport_a330278e53a6adb6a86182edc20814783}} 
+\index{Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}!Parse@{Parse}}
+\index{Parse@{Parse}!Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}}
+\doxysubsubsection{\texorpdfstring{Parse()}{Parse()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport}{Rtsp\+Transport}} Rtsp.\+Messages.\+Rtsp\+Transport.\+Parse (\begin{DoxyParamCaption}\item[{string}]{a\+Transport\+String }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Parses the specified transport string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Transport\+String} & A transport string.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The transport class.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Argument\+Null\+Exception} & {\itshape a\+Transport\+String}  is null.\\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 172 of file R\+T\+S\+P\+Transport.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_transport_af357d91e115a38863ab7623264594d1f}\label{class_rtsp_1_1_messages_1_1_rtsp_transport_af357d91e115a38863ab7623264594d1f}} 
+\index{Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}!ToString@{ToString}}
+\index{ToString@{ToString}!Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}}
+\doxysubsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Rtsp.\+Messages.\+Rtsp\+Transport.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a System.\+String that represents this instance. 
+
+\begin{DoxyReturn}{Returns}
+A System.\+String that represents this instance. 
+\end{DoxyReturn}
+
+
+Definition at line 295 of file R\+T\+S\+P\+Transport.\+cs.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_transport_a3c9fcef67685668714c6967817e767d5}\label{class_rtsp_1_1_messages_1_1_rtsp_transport_a3c9fcef67685668714c6967817e767d5}} 
+\index{Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}!ClientPort@{ClientPort}}
+\index{ClientPort@{ClientPort}!Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}}
+\doxysubsubsection{\texorpdfstring{ClientPort}{ClientPort}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_port_couple}{Port\+Couple}} Rtsp.\+Messages.\+Rtsp\+Transport.\+Client\+Port\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the client port. 
+
+The client port.
+
+Definition at line 149 of file R\+T\+S\+P\+Transport.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_transport_abdd20ebbf17ba68401603dd8ca35c94f}\label{class_rtsp_1_1_messages_1_1_rtsp_transport_abdd20ebbf17ba68401603dd8ca35c94f}} 
+\index{Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}!Destination@{Destination}}
+\index{Destination@{Destination}!Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}}
+\doxysubsubsection{\texorpdfstring{Destination}{Destination}}
+{\footnotesize\ttfamily string Rtsp.\+Messages.\+Rtsp\+Transport.\+Destination\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the destination. 
+
+The destination.
+
+Definition at line 114 of file R\+T\+S\+P\+Transport.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_transport_a6d56eec32953f3c57eff15d1715c2e24}\label{class_rtsp_1_1_messages_1_1_rtsp_transport_a6d56eec32953f3c57eff15d1715c2e24}} 
+\index{Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}!Interleaved@{Interleaved}}
+\index{Interleaved@{Interleaved}!Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}}
+\doxysubsubsection{\texorpdfstring{Interleaved}{Interleaved}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_port_couple}{Port\+Couple}} Rtsp.\+Messages.\+Rtsp\+Transport.\+Interleaved\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the interleaved. 
+
+The interleaved.
+
+Definition at line 124 of file R\+T\+S\+P\+Transport.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_transport_a07aff1b8f962262c076b99f023ca62ef}\label{class_rtsp_1_1_messages_1_1_rtsp_transport_a07aff1b8f962262c076b99f023ca62ef}} 
+\index{Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}!IsAppend@{IsAppend}}
+\index{IsAppend@{IsAppend}!Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}}
+\doxysubsubsection{\texorpdfstring{IsAppend}{IsAppend}}
+{\footnotesize\ttfamily bool Rtsp.\+Messages.\+Rtsp\+Transport.\+Is\+Append\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets a value indicating whether this instance is append. 
+
+{\ttfamily true} if this instance is append; otherwise, {\ttfamily false}.
+
+Definition at line 129 of file R\+T\+S\+P\+Transport.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_transport_a0ec9a01954319b71310f26d55436455a}\label{class_rtsp_1_1_messages_1_1_rtsp_transport_a0ec9a01954319b71310f26d55436455a}} 
+\index{Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}!IsMulticast@{IsMulticast}}
+\index{IsMulticast@{IsMulticast}!Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}}
+\doxysubsubsection{\texorpdfstring{IsMulticast}{IsMulticast}}
+{\footnotesize\ttfamily bool Rtsp.\+Messages.\+Rtsp\+Transport.\+Is\+Multicast\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets a value indicating whether this instance is multicast. 
+
+{\ttfamily true} if this instance is multicast; otherwise, {\ttfamily false}. 
+
+Definition at line 109 of file R\+T\+S\+P\+Transport.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_transport_a3023c32195dab7d2540f2815bc0aee03}\label{class_rtsp_1_1_messages_1_1_rtsp_transport_a3023c32195dab7d2540f2815bc0aee03}} 
+\index{Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}!Layers@{Layers}}
+\index{Layers@{Layers}!Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}}
+\doxysubsubsection{\texorpdfstring{Layers}{Layers}}
+{\footnotesize\ttfamily int Rtsp.\+Messages.\+Rtsp\+Transport.\+Layers\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the layers. 
+
+The layers.
+
+Definition at line 139 of file R\+T\+S\+P\+Transport.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_transport_a09da205a09c0710f2c2c2cbacb2419a6}\label{class_rtsp_1_1_messages_1_1_rtsp_transport_a09da205a09c0710f2c2c2cbacb2419a6}} 
+\index{Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}!LowerTransport@{LowerTransport}}
+\index{LowerTransport@{LowerTransport}!Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}}
+\doxysubsubsection{\texorpdfstring{LowerTransport}{LowerTransport}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_a14df0494e25631d755b1e0d90f549f9e}{Lower\+Transport\+Type}} Rtsp.\+Messages.\+Rtsp\+Transport.\+Lower\+Transport\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the lower transport. 
+
+The lower transport.
+
+Definition at line 102 of file R\+T\+S\+P\+Transport.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_transport_a45920cee9293c0b0f4f40f5834473cd9}\label{class_rtsp_1_1_messages_1_1_rtsp_transport_a45920cee9293c0b0f4f40f5834473cd9}} 
+\index{Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}!Mode@{Mode}}
+\index{Mode@{Mode}!Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}}
+\doxysubsubsection{\texorpdfstring{Mode}{Mode}}
+{\footnotesize\ttfamily string Rtsp.\+Messages.\+Rtsp\+Transport.\+Mode\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the mode. 
+
+The mode.
+
+Definition at line 164 of file R\+T\+S\+P\+Transport.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_transport_a94c531d96e2514eeb847760a87d26334}\label{class_rtsp_1_1_messages_1_1_rtsp_transport_a94c531d96e2514eeb847760a87d26334}} 
+\index{Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}!Port@{Port}}
+\index{Port@{Port}!Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}}
+\doxysubsubsection{\texorpdfstring{Port}{Port}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_port_couple}{Port\+Couple}} Rtsp.\+Messages.\+Rtsp\+Transport.\+Port\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the port. 
+
+The port.
+
+Definition at line 144 of file R\+T\+S\+P\+Transport.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_transport_a19ac308c698c10f4e7f14533e4ebb5a4}\label{class_rtsp_1_1_messages_1_1_rtsp_transport_a19ac308c698c10f4e7f14533e4ebb5a4}} 
+\index{Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}!Profile@{Profile}}
+\index{Profile@{Profile}!Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}}
+\doxysubsubsection{\texorpdfstring{Profile}{Profile}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_a44b6e1f08691810251af000a64908857}{Profile\+Type}} Rtsp.\+Messages.\+Rtsp\+Transport.\+Profile\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the profile. 
+
+The profile.
+
+Definition at line 97 of file R\+T\+S\+P\+Transport.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_transport_aa1f8afc15728f08d6282389a76ae1ebf}\label{class_rtsp_1_1_messages_1_1_rtsp_transport_aa1f8afc15728f08d6282389a76ae1ebf}} 
+\index{Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}!ServerPort@{ServerPort}}
+\index{ServerPort@{ServerPort}!Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}}
+\doxysubsubsection{\texorpdfstring{ServerPort}{ServerPort}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_port_couple}{Port\+Couple}} Rtsp.\+Messages.\+Rtsp\+Transport.\+Server\+Port\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the server port. 
+
+The server port.
+
+Definition at line 154 of file R\+T\+S\+P\+Transport.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_transport_a4da47d41917141296015ca76aeecfb4d}\label{class_rtsp_1_1_messages_1_1_rtsp_transport_a4da47d41917141296015ca76aeecfb4d}} 
+\index{Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}!Source@{Source}}
+\index{Source@{Source}!Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}}
+\doxysubsubsection{\texorpdfstring{Source}{Source}}
+{\footnotesize\ttfamily string Rtsp.\+Messages.\+Rtsp\+Transport.\+Source\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the source. 
+
+The source.
+
+Definition at line 119 of file R\+T\+S\+P\+Transport.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_transport_a78be3cf648061b540d97efbc67f45212}\label{class_rtsp_1_1_messages_1_1_rtsp_transport_a78be3cf648061b540d97efbc67f45212}} 
+\index{Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}!SSrc@{SSrc}}
+\index{SSrc@{SSrc}!Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}}
+\doxysubsubsection{\texorpdfstring{SSrc}{SSrc}}
+{\footnotesize\ttfamily string Rtsp.\+Messages.\+Rtsp\+Transport.\+S\+Src\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the S S\+RC. 
+
+The S S\+RC.
+
+Definition at line 159 of file R\+T\+S\+P\+Transport.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_transport_a9f72d8b1f2b2a1f58d3487d17f4c0548}\label{class_rtsp_1_1_messages_1_1_rtsp_transport_a9f72d8b1f2b2a1f58d3487d17f4c0548}} 
+\index{Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}!Transport@{Transport}}
+\index{Transport@{Transport}!Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}}
+\doxysubsubsection{\texorpdfstring{Transport}{Transport}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_transport_abb68f4916a378efa839a608223cb95b9}{Transport\+Type}} Rtsp.\+Messages.\+Rtsp\+Transport.\+Transport\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the transport. 
+
+The transport.
+
+Definition at line 92 of file R\+T\+S\+P\+Transport.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_transport_a3288a50f8fcc4967b585a9dc4c48ffd2}\label{class_rtsp_1_1_messages_1_1_rtsp_transport_a3288a50f8fcc4967b585a9dc4c48ffd2}} 
+\index{Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}!TTL@{TTL}}
+\index{TTL@{TTL}!Rtsp.Messages.RtspTransport@{Rtsp.Messages.RtspTransport}}
+\doxysubsubsection{\texorpdfstring{TTL}{TTL}}
+{\footnotesize\ttfamily int Rtsp.\+Messages.\+Rtsp\+Transport.\+T\+TL\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the T\+TL. 
+
+The T\+TL.
+
+Definition at line 134 of file R\+T\+S\+P\+Transport.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Here\+Link\+Video/\+R\+T\+S\+P/\+Messages/\mbox{\hyperlink{_r_t_s_p_transport_8cs}{R\+T\+S\+P\+Transport.\+cs}}\end{DoxyCompactItemize}

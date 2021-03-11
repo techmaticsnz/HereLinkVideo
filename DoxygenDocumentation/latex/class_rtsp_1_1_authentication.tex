@@ -1,0 +1,101 @@
+\hypertarget{class_rtsp_1_1_authentication}{}\doxysection{Rtsp.\+Authentication Class Reference}
+\label{class_rtsp_1_1_authentication}\index{Rtsp.Authentication@{Rtsp.Authentication}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_rtsp_1_1_authentication_a1eea1a9138f37baba9fbda3172bf2168}{Type}} \{ \mbox{\hyperlink{class_rtsp_1_1_authentication_a1eea1a9138f37baba9fbda3172bf2168a972e73b7a882d0802a4e3a16946a2f94}{Type.\+Basic}}, 
+\mbox{\hyperlink{class_rtsp_1_1_authentication_a1eea1a9138f37baba9fbda3172bf2168ae5cfc515f312c9e85f367e9854d9963e}{Type.\+Digest}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_rtsp_1_1_authentication_ab451a9c2453e7bb5083f2c9204a0c7cb}{Authentication}} (String username, String password, String realm, \mbox{\hyperlink{class_rtsp_1_1_authentication_a1eea1a9138f37baba9fbda3172bf2168}{Type}} authentication\+\_\+type)
+\item 
+String \mbox{\hyperlink{class_rtsp_1_1_authentication_acfe34e984131a4a0b0c0bc7f53213461}{Get\+Header}} ()
+\item 
+bool \mbox{\hyperlink{class_rtsp_1_1_authentication_ad64bee0f068b977c8dd24ededf7e4c14}{Is\+Valid}} (\mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_message}{Rtsp.\+Messages.\+Rtsp\+Message}} received\+\_\+message)
+\item 
+string \mbox{\hyperlink{class_rtsp_1_1_authentication_ab9b553eafe5089a10bfc92c5db39c2ca}{Generate\+Authorization}} (string username, string password, string auth\+\_\+type, string realm, string nonce, string url, string command)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 9 of file Authentication.\+cs.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_rtsp_1_1_authentication_a1eea1a9138f37baba9fbda3172bf2168}\label{class_rtsp_1_1_authentication_a1eea1a9138f37baba9fbda3172bf2168}} 
+\index{Rtsp.Authentication@{Rtsp.Authentication}!Type@{Type}}
+\index{Type@{Type}!Rtsp.Authentication@{Rtsp.Authentication}}
+\doxysubsubsection{\texorpdfstring{Type}{Type}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_rtsp_1_1_authentication_a1eea1a9138f37baba9fbda3172bf2168}{Rtsp.\+Authentication.\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Basic@{Basic}!Rtsp.Authentication@{Rtsp.Authentication}}\index{Rtsp.Authentication@{Rtsp.Authentication}!Basic@{Basic}}}\mbox{\Hypertarget{class_rtsp_1_1_authentication_a1eea1a9138f37baba9fbda3172bf2168a972e73b7a882d0802a4e3a16946a2f94}\label{class_rtsp_1_1_authentication_a1eea1a9138f37baba9fbda3172bf2168a972e73b7a882d0802a4e3a16946a2f94}} 
+Basic&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Digest@{Digest}!Rtsp.Authentication@{Rtsp.Authentication}}\index{Rtsp.Authentication@{Rtsp.Authentication}!Digest@{Digest}}}\mbox{\Hypertarget{class_rtsp_1_1_authentication_a1eea1a9138f37baba9fbda3172bf2168ae5cfc515f312c9e85f367e9854d9963e}\label{class_rtsp_1_1_authentication_a1eea1a9138f37baba9fbda3172bf2168ae5cfc515f312c9e85f367e9854d9963e}} 
+Digest&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 13 of file Authentication.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_rtsp_1_1_authentication_ab451a9c2453e7bb5083f2c9204a0c7cb}\label{class_rtsp_1_1_authentication_ab451a9c2453e7bb5083f2c9204a0c7cb}} 
+\index{Rtsp.Authentication@{Rtsp.Authentication}!Authentication@{Authentication}}
+\index{Authentication@{Authentication}!Rtsp.Authentication@{Rtsp.Authentication}}
+\doxysubsubsection{\texorpdfstring{Authentication()}{Authentication()}}
+{\footnotesize\ttfamily Rtsp.\+Authentication.\+Authentication (\begin{DoxyParamCaption}\item[{String}]{username,  }\item[{String}]{password,  }\item[{String}]{realm,  }\item[{\mbox{\hyperlink{class_rtsp_1_1_authentication_a1eea1a9138f37baba9fbda3172bf2168}{Type}}}]{authentication\+\_\+type }\end{DoxyParamCaption})}
+
+
+
+Definition at line 26 of file Authentication.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_rtsp_1_1_authentication_ab9b553eafe5089a10bfc92c5db39c2ca}\label{class_rtsp_1_1_authentication_ab9b553eafe5089a10bfc92c5db39c2ca}} 
+\index{Rtsp.Authentication@{Rtsp.Authentication}!GenerateAuthorization@{GenerateAuthorization}}
+\index{GenerateAuthorization@{GenerateAuthorization}!Rtsp.Authentication@{Rtsp.Authentication}}
+\doxysubsubsection{\texorpdfstring{GenerateAuthorization()}{GenerateAuthorization()}}
+{\footnotesize\ttfamily string Rtsp.\+Authentication.\+Generate\+Authorization (\begin{DoxyParamCaption}\item[{string}]{username,  }\item[{string}]{password,  }\item[{string}]{auth\+\_\+type,  }\item[{string}]{realm,  }\item[{string}]{nonce,  }\item[{string}]{url,  }\item[{string}]{command }\end{DoxyParamCaption})}
+
+
+
+Definition at line 130 of file Authentication.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_authentication_acfe34e984131a4a0b0c0bc7f53213461}\label{class_rtsp_1_1_authentication_acfe34e984131a4a0b0c0bc7f53213461}} 
+\index{Rtsp.Authentication@{Rtsp.Authentication}!GetHeader@{GetHeader}}
+\index{GetHeader@{GetHeader}!Rtsp.Authentication@{Rtsp.Authentication}}
+\doxysubsubsection{\texorpdfstring{GetHeader()}{GetHeader()}}
+{\footnotesize\ttfamily String Rtsp.\+Authentication.\+Get\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 35 of file Authentication.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_authentication_ad64bee0f068b977c8dd24ededf7e4c14}\label{class_rtsp_1_1_authentication_ad64bee0f068b977c8dd24ededf7e4c14}} 
+\index{Rtsp.Authentication@{Rtsp.Authentication}!IsValid@{IsValid}}
+\index{IsValid@{IsValid}!Rtsp.Authentication@{Rtsp.Authentication}}
+\doxysubsubsection{\texorpdfstring{IsValid()}{IsValid()}}
+{\footnotesize\ttfamily bool Rtsp.\+Authentication.\+Is\+Valid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_message}{Rtsp.\+Messages.\+Rtsp\+Message}}}]{received\+\_\+message }\end{DoxyParamCaption})}
+
+
+
+Definition at line 46 of file Authentication.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Here\+Link\+Video/\+R\+T\+S\+P/\mbox{\hyperlink{_authentication_8cs}{Authentication.\+cs}}\end{DoxyCompactItemize}

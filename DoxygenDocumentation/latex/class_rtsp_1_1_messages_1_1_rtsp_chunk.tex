@@ -1,0 +1,141 @@
+\hypertarget{class_rtsp_1_1_messages_1_1_rtsp_chunk}{}\doxysection{Rtsp.\+Messages.\+Rtsp\+Chunk Class Reference}
+\label{class_rtsp_1_1_messages_1_1_rtsp_chunk}\index{Rtsp.Messages.RtspChunk@{Rtsp.Messages.RtspChunk}}
+
+
+Class wich represent each message echanged on \mbox{\hyperlink{namespace_rtsp}{Rtsp}} socket.  
+
+
+
+
+Inheritance diagram for Rtsp.\+Messages.\+Rtsp\+Chunk\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_rtsp_1_1_messages_1_1_rtsp_chunk__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Rtsp.\+Messages.\+Rtsp\+Chunk\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{class_rtsp_1_1_messages_1_1_rtsp_chunk__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_chunk_ae246f90d04bcf02cad9f494e10313f38}{Log\+Message}} ()
+\begin{DoxyCompactList}\small\item\em Logs the message to debug. \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_chunk_a487252e7f05c8c5fa52c00fe7abffbe8}{Log\+Message}} (N\+Log.\+Log\+Level a\+Level)
+\begin{DoxyCompactList}\small\item\em Logs the message. \end{DoxyCompactList}\item 
+abstract object \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_chunk_a0709fdb8d493d4ce314ea8e41218782d}{Clone}} ()
+\begin{DoxyCompactList}\small\item\em Crée un nouvel objet qui est une copie de l\textquotesingle{}instance en cours. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+byte\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_chunk_a208869ce05bf8af2b9ef6dbe71922f79}{Data}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the data associate with the message. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rtsp_1_1_rtsp_listener}{Rtsp\+Listener}} \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_chunk_a06fd8b59d56e1782534b94f32c84ca05}{Source\+Port}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the source port wich receive the message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class wich represent each message echanged on \mbox{\hyperlink{namespace_rtsp}{Rtsp}} socket. 
+
+
+
+Definition at line 11 of file R\+T\+S\+P\+Chunk.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_chunk_a0709fdb8d493d4ce314ea8e41218782d}\label{class_rtsp_1_1_messages_1_1_rtsp_chunk_a0709fdb8d493d4ce314ea8e41218782d}} 
+\index{Rtsp.Messages.RtspChunk@{Rtsp.Messages.RtspChunk}!Clone@{Clone}}
+\index{Clone@{Clone}!Rtsp.Messages.RtspChunk@{Rtsp.Messages.RtspChunk}}
+\doxysubsubsection{\texorpdfstring{Clone()}{Clone()}}
+{\footnotesize\ttfamily abstract object Rtsp.\+Messages.\+Rtsp\+Chunk.\+Clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Crée un nouvel objet qui est une copie de l\textquotesingle{}instance en cours. 
+
+\begin{DoxyReturn}{Returns}
+Nouvel objet qui est une copie de cette instance. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_message_af37fa6afaf3676fd970c0475f31245cc}{Rtsp.\+Messages.\+Rtsp\+Message}}, and \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_data_a1b4e597cf790734672e0328a2628b3ad}{Rtsp.\+Messages.\+Rtsp\+Data}}.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_chunk_ae246f90d04bcf02cad9f494e10313f38}\label{class_rtsp_1_1_messages_1_1_rtsp_chunk_ae246f90d04bcf02cad9f494e10313f38}} 
+\index{Rtsp.Messages.RtspChunk@{Rtsp.Messages.RtspChunk}!LogMessage@{LogMessage}}
+\index{LogMessage@{LogMessage}!Rtsp.Messages.RtspChunk@{Rtsp.Messages.RtspChunk}}
+\doxysubsubsection{\texorpdfstring{LogMessage()}{LogMessage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Rtsp.\+Messages.\+Rtsp\+Chunk.\+Log\+Message (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Logs the message to debug. 
+
+
+
+Definition at line 16 of file R\+T\+S\+P\+Chunk.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_chunk_a487252e7f05c8c5fa52c00fe7abffbe8}\label{class_rtsp_1_1_messages_1_1_rtsp_chunk_a487252e7f05c8c5fa52c00fe7abffbe8}} 
+\index{Rtsp.Messages.RtspChunk@{Rtsp.Messages.RtspChunk}!LogMessage@{LogMessage}}
+\index{LogMessage@{LogMessage}!Rtsp.Messages.RtspChunk@{Rtsp.Messages.RtspChunk}}
+\doxysubsubsection{\texorpdfstring{LogMessage()}{LogMessage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily abstract void Rtsp.\+Messages.\+Rtsp\+Chunk.\+Log\+Message (\begin{DoxyParamCaption}\item[{N\+Log.\+Log\+Level}]{a\+Level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Logs the message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alevel} & The log level.\\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_message_a6dcc828cd2361c6fab345c6168565415}{Rtsp.\+Messages.\+Rtsp\+Message}}, and \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_data_a2721913b4bc1c2ed86c945ef2f797b53}{Rtsp.\+Messages.\+Rtsp\+Data}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_chunk_a208869ce05bf8af2b9ef6dbe71922f79}\label{class_rtsp_1_1_messages_1_1_rtsp_chunk_a208869ce05bf8af2b9ef6dbe71922f79}} 
+\index{Rtsp.Messages.RtspChunk@{Rtsp.Messages.RtspChunk}!Data@{Data}}
+\index{Data@{Data}!Rtsp.Messages.RtspChunk@{Rtsp.Messages.RtspChunk}}
+\doxysubsubsection{\texorpdfstring{Data}{Data}}
+{\footnotesize\ttfamily byte \mbox{[}$\,$\mbox{]} Rtsp.\+Messages.\+Rtsp\+Chunk.\+Data\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the data associate with the message. 
+
+Array of byte transmit with the message.
+
+Definition at line 32 of file R\+T\+S\+P\+Chunk.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_messages_1_1_rtsp_chunk_a06fd8b59d56e1782534b94f32c84ca05}\label{class_rtsp_1_1_messages_1_1_rtsp_chunk_a06fd8b59d56e1782534b94f32c84ca05}} 
+\index{Rtsp.Messages.RtspChunk@{Rtsp.Messages.RtspChunk}!SourcePort@{SourcePort}}
+\index{SourcePort@{SourcePort}!Rtsp.Messages.RtspChunk@{Rtsp.Messages.RtspChunk}}
+\doxysubsubsection{\texorpdfstring{SourcePort}{SourcePort}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rtsp_1_1_rtsp_listener}{Rtsp\+Listener}} Rtsp.\+Messages.\+Rtsp\+Chunk.\+Source\+Port\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the source port wich receive the message. 
+
+The source port.
+
+Definition at line 38 of file R\+T\+S\+P\+Chunk.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Here\+Link\+Video/\+R\+T\+S\+P/\+Messages/\mbox{\hyperlink{_r_t_s_p_chunk_8cs}{R\+T\+S\+P\+Chunk.\+cs}}\end{DoxyCompactItemize}

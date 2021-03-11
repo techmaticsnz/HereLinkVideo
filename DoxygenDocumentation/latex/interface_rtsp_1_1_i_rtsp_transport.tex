@@ -1,0 +1,133 @@
+\hypertarget{interface_rtsp_1_1_i_rtsp_transport}{}\doxysection{Rtsp.\+I\+Rtsp\+Transport Interface Reference}
+\label{interface_rtsp_1_1_i_rtsp_transport}\index{Rtsp.IRtspTransport@{Rtsp.IRtspTransport}}
+
+
+Interface for Transport of \mbox{\hyperlink{namespace_rtsp}{Rtsp}} (T\+CP, T\+C\+P+\+S\+SL,..)  
+
+
+
+
+Inheritance diagram for Rtsp.\+I\+Rtsp\+Transport\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{interface_rtsp_1_1_i_rtsp_transport__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_video_player_renderer_8cs_a1881e33d741b63d5d7c425375f6d5c8d}{System.\+I\+O.\+Stream}} \mbox{\hyperlink{interface_rtsp_1_1_i_rtsp_transport_a6af6cc962ad0d8c904f5acbdf53ea82b}{Get\+Stream}} ()
+\begin{DoxyCompactList}\small\item\em Gets the stream of the transport. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_rtsp_1_1_i_rtsp_transport_ad367d1aaffb1831e1064a6d84b1c7675}{Close}} ()
+\begin{DoxyCompactList}\small\item\em Closes this instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interface_rtsp_1_1_i_rtsp_transport_a80054e829e949faa645d8741db6fa62f}{Reconnect}} ()
+\begin{DoxyCompactList}\small\item\em Reconnect this instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{interface_rtsp_1_1_i_rtsp_transport_aa1614e0953be84d9b88b423b48d14ef8}{Remote\+Address}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the remote address. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{interface_rtsp_1_1_i_rtsp_transport_a0e917b4966ccee1038aea0c729e33b83}{Connected}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets a value indicating whether this \mbox{\hyperlink{interface_rtsp_1_1_i_rtsp_transport}{I\+Rtsp\+Transport}} is connected. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for Transport of \mbox{\hyperlink{namespace_rtsp}{Rtsp}} (T\+CP, T\+C\+P+\+S\+SL,..) 
+
+
+
+Definition at line 8 of file I\+R\+T\+S\+P\+Transport.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interface_rtsp_1_1_i_rtsp_transport_ad367d1aaffb1831e1064a6d84b1c7675}\label{interface_rtsp_1_1_i_rtsp_transport_ad367d1aaffb1831e1064a6d84b1c7675}} 
+\index{Rtsp.IRtspTransport@{Rtsp.IRtspTransport}!Close@{Close}}
+\index{Close@{Close}!Rtsp.IRtspTransport@{Rtsp.IRtspTransport}}
+\doxysubsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily void Rtsp.\+I\+Rtsp\+Transport.\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Closes this instance. 
+
+
+
+Implemented in \mbox{\hyperlink{class_rtsp_1_1_rtsp_tcp_transport_a296269ddfcb6bd9a00990cc80718184b}{Rtsp.\+Rtsp\+Tcp\+Transport}}.
+
+\mbox{\Hypertarget{interface_rtsp_1_1_i_rtsp_transport_a6af6cc962ad0d8c904f5acbdf53ea82b}\label{interface_rtsp_1_1_i_rtsp_transport_a6af6cc962ad0d8c904f5acbdf53ea82b}} 
+\index{Rtsp.IRtspTransport@{Rtsp.IRtspTransport}!GetStream@{GetStream}}
+\index{GetStream@{GetStream}!Rtsp.IRtspTransport@{Rtsp.IRtspTransport}}
+\doxysubsubsection{\texorpdfstring{GetStream()}{GetStream()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_video_player_renderer_8cs_a1881e33d741b63d5d7c425375f6d5c8d}{System.\+I\+O.\+Stream}} Rtsp.\+I\+Rtsp\+Transport.\+Get\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the stream of the transport. 
+
+\begin{DoxyReturn}{Returns}
+A stream
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_rtsp_1_1_rtsp_tcp_transport_a6f9d59a06395b26e9adda0b776a581f9}{Rtsp.\+Rtsp\+Tcp\+Transport}}.
+
+\mbox{\Hypertarget{interface_rtsp_1_1_i_rtsp_transport_a80054e829e949faa645d8741db6fa62f}\label{interface_rtsp_1_1_i_rtsp_transport_a80054e829e949faa645d8741db6fa62f}} 
+\index{Rtsp.IRtspTransport@{Rtsp.IRtspTransport}!Reconnect@{Reconnect}}
+\index{Reconnect@{Reconnect}!Rtsp.IRtspTransport@{Rtsp.IRtspTransport}}
+\doxysubsubsection{\texorpdfstring{Reconnect()}{Reconnect()}}
+{\footnotesize\ttfamily void Rtsp.\+I\+Rtsp\+Transport.\+Reconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reconnect this instance. 
+
+Must do nothing if already connected.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\+Net.\+Sockets.\+Socket\+Exception} & Error during socket \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_rtsp_1_1_rtsp_tcp_transport_adab900704b85193f4721ee9cf73fe271}{Rtsp.\+Rtsp\+Tcp\+Transport}}.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{interface_rtsp_1_1_i_rtsp_transport_a0e917b4966ccee1038aea0c729e33b83}\label{interface_rtsp_1_1_i_rtsp_transport_a0e917b4966ccee1038aea0c729e33b83}} 
+\index{Rtsp.IRtspTransport@{Rtsp.IRtspTransport}!Connected@{Connected}}
+\index{Connected@{Connected}!Rtsp.IRtspTransport@{Rtsp.IRtspTransport}}
+\doxysubsubsection{\texorpdfstring{Connected}{Connected}}
+{\footnotesize\ttfamily bool Rtsp.\+I\+Rtsp\+Transport.\+Connected\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets a value indicating whether this \mbox{\hyperlink{interface_rtsp_1_1_i_rtsp_transport}{I\+Rtsp\+Transport}} is connected. 
+
+{\ttfamily true} if connected; otherwise, {\ttfamily false}.
+
+Definition at line 34 of file I\+R\+T\+S\+P\+Transport.\+cs.
+
+\mbox{\Hypertarget{interface_rtsp_1_1_i_rtsp_transport_aa1614e0953be84d9b88b423b48d14ef8}\label{interface_rtsp_1_1_i_rtsp_transport_aa1614e0953be84d9b88b423b48d14ef8}} 
+\index{Rtsp.IRtspTransport@{Rtsp.IRtspTransport}!RemoteAddress@{RemoteAddress}}
+\index{RemoteAddress@{RemoteAddress}!Rtsp.IRtspTransport@{Rtsp.IRtspTransport}}
+\doxysubsubsection{\texorpdfstring{RemoteAddress}{RemoteAddress}}
+{\footnotesize\ttfamily string Rtsp.\+I\+Rtsp\+Transport.\+Remote\+Address\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the remote address. 
+
+The remote address.
+
+Definition at line 21 of file I\+R\+T\+S\+P\+Transport.\+cs.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Here\+Link\+Video/\+R\+T\+S\+P/\mbox{\hyperlink{_i_r_t_s_p_transport_8cs}{I\+R\+T\+S\+P\+Transport.\+cs}}\end{DoxyCompactItemize}

@@ -1,0 +1,413 @@
+\hypertarget{class_rtsp_1_1_rtsp_listener}{}\doxysection{Rtsp.\+Rtsp\+Listener Class Reference}
+\label{class_rtsp_1_1_rtsp_listener}\index{Rtsp.RtspListener@{Rtsp.RtspListener}}
+
+
+\mbox{\hyperlink{namespace_rtsp}{Rtsp}} lister  
+
+
+
+
+Inheritance diagram for Rtsp.\+Rtsp\+Listener\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{class_rtsp_1_1_rtsp_listener__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Rtsp.\+Rtsp\+Listener\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{class_rtsp_1_1_rtsp_listener__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_rtsp_1_1_rtsp_listener_a86e014e5694b882232d2d5c28d0a6ad4}{Rtsp\+Listener}} (\mbox{\hyperlink{interface_rtsp_1_1_i_rtsp_transport}{I\+Rtsp\+Transport}} connection)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \mbox{\hyperlink{class_rtsp_1_1_rtsp_listener}{Rtsp\+Listener}} class from a T\+CP connection. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rtsp_1_1_rtsp_listener_aebd9e48f8c5d1eb7094fb22dd294b1fa}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Starts this instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rtsp_1_1_rtsp_listener_a2f898619a74bc64ca43a3aa9fb852aa3}{Stop}} ()
+\begin{DoxyCompactList}\small\item\em Stops this instance. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_rtsp_1_1_rtsp_listener_a38e11e9a0b91a1563ecfdc5e9ca2b7c8}{Send\+Message}} (\mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_message}{Rtsp\+Message}} message)
+\begin{DoxyCompactList}\small\item\em Sends the message. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rtsp_1_1_rtsp_listener_ac3009b9a11be99f781dd0dc2b1c3e80c}{Reconnect}} ()
+\begin{DoxyCompactList}\small\item\em Reconnect this instance of \mbox{\hyperlink{class_rtsp_1_1_rtsp_listener}{Rtsp\+Listener}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_chunk}{Rtsp\+Chunk}} \mbox{\hyperlink{class_rtsp_1_1_rtsp_listener_aecc5b7770cb59746774848d6ab75ecf3}{Read\+One\+Message}} (\mbox{\hyperlink{_video_player_renderer_8cs_a1881e33d741b63d5d7c425375f6d5c8d}{Stream}} command\+Stream)
+\begin{DoxyCompactList}\small\item\em Reads one message. \end{DoxyCompactList}\item 
+I\+Async\+Result \mbox{\hyperlink{class_rtsp_1_1_rtsp_listener_a9052816dec72711f33cb0e07f2acda6b}{Begin\+Send\+Data}} (\mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_data}{Rtsp\+Data}} a\+Rtsp\+Data, Async\+Callback async\+Callback, object state)
+\begin{DoxyCompactList}\small\item\em Begins the send data. \end{DoxyCompactList}\item 
+I\+Async\+Result \mbox{\hyperlink{class_rtsp_1_1_rtsp_listener_ad8fc66fe213bbaa9a6d05dfdef4bf276}{Begin\+Send\+Data}} (int channel, byte\mbox{[}$\,$\mbox{]} frame, Async\+Callback async\+Callback, object state)
+\begin{DoxyCompactList}\small\item\em Begins the send data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rtsp_1_1_rtsp_listener_adba155ea157c957b6828f07a9c0cf0a6}{End\+Send\+Data}} (I\+Async\+Result result)
+\begin{DoxyCompactList}\small\item\em Ends the send data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rtsp_1_1_rtsp_listener_a0bba5da88aa2abca5eb8398e4aa2c7a7}{Send\+Data}} (int channel, byte\mbox{[}$\,$\mbox{]} frame)
+\begin{DoxyCompactList}\small\item\em Send data (Synchronous) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rtsp_1_1_rtsp_listener_ad4cc022e899673588103b44c17262c28}{Dispose}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_rtsp_1_1_rtsp_listener_a707dbb7e8a0f979ec3383142d3b836a2}{On\+Message\+Received}} (\mbox{\hyperlink{class_rtsp_1_1_rtsp_chunk_event_args}{Rtsp\+Chunk\+Event\+Args}} e)
+\begin{DoxyCompactList}\small\item\em Raises the E\+:\+Message\+Received event. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rtsp_1_1_rtsp_listener_a76e7bc4b9980194fc255d0b601bb4250}{On\+Data\+Received}} (\mbox{\hyperlink{class_rtsp_1_1_rtsp_chunk_event_args}{Rtsp\+Chunk\+Event\+Args}} rtsp\+Chunk\+Event\+Args)
+\begin{DoxyCompactList}\small\item\em Raises the E\+:\+Data\+Received event. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_rtsp_1_1_rtsp_listener_a168769fb2f8fe8f3e5ac5a2128c2c4a7}{Dispose}} (bool disposing)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_rtsp_1_1_rtsp_listener_a4e28c69fce4a6f4b51b9ce1819e1f8ed}{Remote\+Adress}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the remote address. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_rtsp_1_1_rtsp_listener_a4dd001d1238cd775088f3005cfb772be}{Auto\+Reconnect}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Enable auto reconnect. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+Event\+Handler$<$ \mbox{\hyperlink{class_rtsp_1_1_rtsp_chunk_event_args}{Rtsp\+Chunk\+Event\+Args}} $>$ \mbox{\hyperlink{class_rtsp_1_1_rtsp_listener_a02c6637ea78251749a884ad782905e3b}{Message\+Received}}
+\begin{DoxyCompactList}\small\item\em Occurs when message is received. \end{DoxyCompactList}\item 
+Event\+Handler$<$ \mbox{\hyperlink{class_rtsp_1_1_rtsp_chunk_event_args}{Rtsp\+Chunk\+Event\+Args}} $>$ \mbox{\hyperlink{class_rtsp_1_1_rtsp_listener_af0d1c47145a8f0b84dc5017f5c28efac}{Data\+Received}}
+\begin{DoxyCompactList}\small\item\em Occurs when Data is received. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{namespace_rtsp}{Rtsp}} lister 
+
+
+
+Definition at line 16 of file R\+T\+S\+P\+Listener.\+cs.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_rtsp_1_1_rtsp_listener_a86e014e5694b882232d2d5c28d0a6ad4}\label{class_rtsp_1_1_rtsp_listener_a86e014e5694b882232d2d5c28d0a6ad4}} 
+\index{Rtsp.RtspListener@{Rtsp.RtspListener}!RtspListener@{RtspListener}}
+\index{RtspListener@{RtspListener}!Rtsp.RtspListener@{Rtsp.RtspListener}}
+\doxysubsubsection{\texorpdfstring{RtspListener()}{RtspListener()}}
+{\footnotesize\ttfamily Rtsp.\+Rtsp\+Listener.\+Rtsp\+Listener (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_rtsp_1_1_i_rtsp_transport}{I\+Rtsp\+Transport}}}]{connection }\end{DoxyParamCaption})}
+
+
+
+Initializes a new instance of the \mbox{\hyperlink{class_rtsp_1_1_rtsp_listener}{Rtsp\+Listener}} class from a T\+CP connection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em connection} & The connection.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 33 of file R\+T\+S\+P\+Listener.\+cs.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_rtsp_1_1_rtsp_listener_ad8fc66fe213bbaa9a6d05dfdef4bf276}\label{class_rtsp_1_1_rtsp_listener_ad8fc66fe213bbaa9a6d05dfdef4bf276}} 
+\index{Rtsp.RtspListener@{Rtsp.RtspListener}!BeginSendData@{BeginSendData}}
+\index{BeginSendData@{BeginSendData}!Rtsp.RtspListener@{Rtsp.RtspListener}}
+\doxysubsubsection{\texorpdfstring{BeginSendData()}{BeginSendData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily I\+Async\+Result Rtsp.\+Rtsp\+Listener.\+Begin\+Send\+Data (\begin{DoxyParamCaption}\item[{int}]{channel,  }\item[{byte\mbox{[}$\,$\mbox{]}}]{frame,  }\item[{Async\+Callback}]{async\+Callback,  }\item[{object}]{state }\end{DoxyParamCaption})}
+
+
+
+Begins the send data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel.\\
+\hline
+{\em frame} & The frame.\\
+\hline
+{\em async\+Callback} & The async callback.\\
+\hline
+{\em a\+State} & A state.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 459 of file R\+T\+S\+P\+Listener.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_rtsp_listener_a9052816dec72711f33cb0e07f2acda6b}\label{class_rtsp_1_1_rtsp_listener_a9052816dec72711f33cb0e07f2acda6b}} 
+\index{Rtsp.RtspListener@{Rtsp.RtspListener}!BeginSendData@{BeginSendData}}
+\index{BeginSendData@{BeginSendData}!Rtsp.RtspListener@{Rtsp.RtspListener}}
+\doxysubsubsection{\texorpdfstring{BeginSendData()}{BeginSendData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily I\+Async\+Result Rtsp.\+Rtsp\+Listener.\+Begin\+Send\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_data}{Rtsp\+Data}}}]{a\+Rtsp\+Data,  }\item[{Async\+Callback}]{async\+Callback,  }\item[{object}]{state }\end{DoxyParamCaption})}
+
+
+
+Begins the send data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Rtsp\+Data} & A \mbox{\hyperlink{namespace_rtsp}{Rtsp}} data.\\
+\hline
+{\em async\+Callback} & The async callback.\\
+\hline
+{\em a\+State} & A state.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 443 of file R\+T\+S\+P\+Listener.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_rtsp_listener_ad4cc022e899673588103b44c17262c28}\label{class_rtsp_1_1_rtsp_listener_ad4cc022e899673588103b44c17262c28}} 
+\index{Rtsp.RtspListener@{Rtsp.RtspListener}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Rtsp.RtspListener@{Rtsp.RtspListener}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Rtsp.\+Rtsp\+Listener.\+Dispose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 538 of file R\+T\+S\+P\+Listener.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_rtsp_listener_a168769fb2f8fe8f3e5ac5a2128c2c4a7}\label{class_rtsp_1_1_rtsp_listener_a168769fb2f8fe8f3e5ac5a2128c2c4a7}} 
+\index{Rtsp.RtspListener@{Rtsp.RtspListener}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Rtsp.RtspListener@{Rtsp.RtspListener}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Rtsp.\+Rtsp\+Listener.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 544 of file R\+T\+S\+P\+Listener.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_rtsp_listener_adba155ea157c957b6828f07a9c0cf0a6}\label{class_rtsp_1_1_rtsp_listener_adba155ea157c957b6828f07a9c0cf0a6}} 
+\index{Rtsp.RtspListener@{Rtsp.RtspListener}!EndSendData@{EndSendData}}
+\index{EndSendData@{EndSendData}!Rtsp.RtspListener@{Rtsp.RtspListener}}
+\doxysubsubsection{\texorpdfstring{EndSendData()}{EndSendData()}}
+{\footnotesize\ttfamily void Rtsp.\+Rtsp\+Listener.\+End\+Send\+Data (\begin{DoxyParamCaption}\item[{I\+Async\+Result}]{result }\end{DoxyParamCaption})}
+
+
+
+Ends the send data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & The result.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 489 of file R\+T\+S\+P\+Listener.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_rtsp_listener_a76e7bc4b9980194fc255d0b601bb4250}\label{class_rtsp_1_1_rtsp_listener_a76e7bc4b9980194fc255d0b601bb4250}} 
+\index{Rtsp.RtspListener@{Rtsp.RtspListener}!OnDataReceived@{OnDataReceived}}
+\index{OnDataReceived@{OnDataReceived}!Rtsp.RtspListener@{Rtsp.RtspListener}}
+\doxysubsubsection{\texorpdfstring{OnDataReceived()}{OnDataReceived()}}
+{\footnotesize\ttfamily void Rtsp.\+Rtsp\+Listener.\+On\+Data\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_rtsp_1_1_rtsp_chunk_event_args}{Rtsp\+Chunk\+Event\+Args}}}]{rtsp\+Chunk\+Event\+Args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Raises the E\+:\+Data\+Received event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rtsp\+Chunk\+Event\+Args} & The \mbox{\hyperlink{class_rtsp_1_1_rtsp_chunk_event_args}{Rtsp.\+Rtsp\+Chunk\+Event\+Args}} instance containing the event data.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 107 of file R\+T\+S\+P\+Listener.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_rtsp_listener_a707dbb7e8a0f979ec3383142d3b836a2}\label{class_rtsp_1_1_rtsp_listener_a707dbb7e8a0f979ec3383142d3b836a2}} 
+\index{Rtsp.RtspListener@{Rtsp.RtspListener}!OnMessageReceived@{OnMessageReceived}}
+\index{OnMessageReceived@{OnMessageReceived}!Rtsp.RtspListener@{Rtsp.RtspListener}}
+\doxysubsubsection{\texorpdfstring{OnMessageReceived()}{OnMessageReceived()}}
+{\footnotesize\ttfamily void Rtsp.\+Rtsp\+Listener.\+On\+Message\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_rtsp_1_1_rtsp_chunk_event_args}{Rtsp\+Chunk\+Event\+Args}}}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Raises the E\+:\+Message\+Received event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & The \mbox{\hyperlink{class_rtsp_1_1_rtsp_chunk_event_args}{Rtsp.\+Rtsp\+Chunk\+Event\+Args}} instance containing the event data.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 90 of file R\+T\+S\+P\+Listener.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_rtsp_listener_aecc5b7770cb59746774848d6ab75ecf3}\label{class_rtsp_1_1_rtsp_listener_aecc5b7770cb59746774848d6ab75ecf3}} 
+\index{Rtsp.RtspListener@{Rtsp.RtspListener}!ReadOneMessage@{ReadOneMessage}}
+\index{ReadOneMessage@{ReadOneMessage}!Rtsp.RtspListener@{Rtsp.RtspListener}}
+\doxysubsubsection{\texorpdfstring{ReadOneMessage()}{ReadOneMessage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_chunk}{Rtsp\+Chunk}} Rtsp.\+Rtsp\+Listener.\+Read\+One\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_video_player_renderer_8cs_a1881e33d741b63d5d7c425375f6d5c8d}{Stream}}}]{command\+Stream }\end{DoxyParamCaption})}
+
+
+
+Reads one message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command\+Stream} & The \mbox{\hyperlink{namespace_rtsp}{Rtsp}} stream.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Message readen
+\end{DoxyReturn}
+
+
+Definition at line 297 of file R\+T\+S\+P\+Listener.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_rtsp_listener_ac3009b9a11be99f781dd0dc2b1c3e80c}\label{class_rtsp_1_1_rtsp_listener_ac3009b9a11be99f781dd0dc2b1c3e80c}} 
+\index{Rtsp.RtspListener@{Rtsp.RtspListener}!Reconnect@{Reconnect}}
+\index{Reconnect@{Reconnect}!Rtsp.RtspListener@{Rtsp.RtspListener}}
+\doxysubsubsection{\texorpdfstring{Reconnect()}{Reconnect()}}
+{\footnotesize\ttfamily void Rtsp.\+Rtsp\+Listener.\+Reconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reconnect this instance of \mbox{\hyperlink{class_rtsp_1_1_rtsp_listener}{Rtsp\+Listener}}. 
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\+Net.\+Sockets.\+Socket\+Exception} & Error during socket \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 270 of file R\+T\+S\+P\+Listener.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_rtsp_listener_a0bba5da88aa2abca5eb8398e4aa2c7a7}\label{class_rtsp_1_1_rtsp_listener_a0bba5da88aa2abca5eb8398e4aa2c7a7}} 
+\index{Rtsp.RtspListener@{Rtsp.RtspListener}!SendData@{SendData}}
+\index{SendData@{SendData}!Rtsp.RtspListener@{Rtsp.RtspListener}}
+\doxysubsubsection{\texorpdfstring{SendData()}{SendData()}}
+{\footnotesize\ttfamily void Rtsp.\+Rtsp\+Listener.\+Send\+Data (\begin{DoxyParamCaption}\item[{int}]{channel,  }\item[{byte\mbox{[}$\,$\mbox{]}}]{frame }\end{DoxyParamCaption})}
+
+
+
+Send data (Synchronous) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & The channel.\\
+\hline
+{\em frame} & The frame.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 507 of file R\+T\+S\+P\+Listener.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_rtsp_listener_a38e11e9a0b91a1563ecfdc5e9ca2b7c8}\label{class_rtsp_1_1_rtsp_listener_a38e11e9a0b91a1563ecfdc5e9ca2b7c8}} 
+\index{Rtsp.RtspListener@{Rtsp.RtspListener}!SendMessage@{SendMessage}}
+\index{SendMessage@{SendMessage}!Rtsp.RtspListener@{Rtsp.RtspListener}}
+\doxysubsubsection{\texorpdfstring{SendMessage()}{SendMessage()}}
+{\footnotesize\ttfamily bool Rtsp.\+Rtsp\+Listener.\+Send\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_rtsp_1_1_messages_1_1_rtsp_message}{Rtsp\+Message}}}]{message }\end{DoxyParamCaption})}
+
+
+
+Sends the message. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & A message.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it is Ok, otherwise false
+\end{DoxyReturn}
+
+
+Definition at line 221 of file R\+T\+S\+P\+Listener.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_rtsp_listener_aebd9e48f8c5d1eb7094fb22dd294b1fa}\label{class_rtsp_1_1_rtsp_listener_aebd9e48f8c5d1eb7094fb22dd294b1fa}} 
+\index{Rtsp.RtspListener@{Rtsp.RtspListener}!Start@{Start}}
+\index{Start@{Start}!Rtsp.RtspListener@{Rtsp.RtspListener}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Rtsp.\+Rtsp\+Listener.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Starts this instance. 
+
+
+
+Definition at line 58 of file R\+T\+S\+P\+Listener.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_rtsp_listener_a2f898619a74bc64ca43a3aa9fb852aa3}\label{class_rtsp_1_1_rtsp_listener_a2f898619a74bc64ca43a3aa9fb852aa3}} 
+\index{Rtsp.RtspListener@{Rtsp.RtspListener}!Stop@{Stop}}
+\index{Stop@{Stop}!Rtsp.RtspListener@{Rtsp.RtspListener}}
+\doxysubsubsection{\texorpdfstring{Stop()}{Stop()}}
+{\footnotesize\ttfamily void Rtsp.\+Rtsp\+Listener.\+Stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stops this instance. 
+
+
+
+Definition at line 68 of file R\+T\+S\+P\+Listener.\+cs.
+
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_rtsp_1_1_rtsp_listener_a4dd001d1238cd775088f3005cfb772be}\label{class_rtsp_1_1_rtsp_listener_a4dd001d1238cd775088f3005cfb772be}} 
+\index{Rtsp.RtspListener@{Rtsp.RtspListener}!AutoReconnect@{AutoReconnect}}
+\index{AutoReconnect@{AutoReconnect}!Rtsp.RtspListener@{Rtsp.RtspListener}}
+\doxysubsubsection{\texorpdfstring{AutoReconnect}{AutoReconnect}}
+{\footnotesize\ttfamily bool Rtsp.\+Rtsp\+Listener.\+Auto\+Reconnect\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Enable auto reconnect. 
+
+
+
+Definition at line 79 of file R\+T\+S\+P\+Listener.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_rtsp_listener_a4e28c69fce4a6f4b51b9ce1819e1f8ed}\label{class_rtsp_1_1_rtsp_listener_a4e28c69fce4a6f4b51b9ce1819e1f8ed}} 
+\index{Rtsp.RtspListener@{Rtsp.RtspListener}!RemoteAdress@{RemoteAdress}}
+\index{RemoteAdress@{RemoteAdress}!Rtsp.RtspListener@{Rtsp.RtspListener}}
+\doxysubsubsection{\texorpdfstring{RemoteAdress}{RemoteAdress}}
+{\footnotesize\ttfamily string Rtsp.\+Rtsp\+Listener.\+Remote\+Adress\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Gets the remote address. 
+
+The remote adress.
+
+Definition at line 48 of file R\+T\+S\+P\+Listener.\+cs.
+
+
+
+\doxysubsection{Event Documentation}
+\mbox{\Hypertarget{class_rtsp_1_1_rtsp_listener_af0d1c47145a8f0b84dc5017f5c28efac}\label{class_rtsp_1_1_rtsp_listener_af0d1c47145a8f0b84dc5017f5c28efac}} 
+\index{Rtsp.RtspListener@{Rtsp.RtspListener}!DataReceived@{DataReceived}}
+\index{DataReceived@{DataReceived}!Rtsp.RtspListener@{Rtsp.RtspListener}}
+\doxysubsubsection{\texorpdfstring{DataReceived}{DataReceived}}
+{\footnotesize\ttfamily Event\+Handler$<$\mbox{\hyperlink{class_rtsp_1_1_rtsp_chunk_event_args}{Rtsp\+Chunk\+Event\+Args}}$>$ Rtsp.\+Rtsp\+Listener.\+Data\+Received}
+
+
+
+Occurs when Data is received. 
+
+
+
+Definition at line 101 of file R\+T\+S\+P\+Listener.\+cs.
+
+\mbox{\Hypertarget{class_rtsp_1_1_rtsp_listener_a02c6637ea78251749a884ad782905e3b}\label{class_rtsp_1_1_rtsp_listener_a02c6637ea78251749a884ad782905e3b}} 
+\index{Rtsp.RtspListener@{Rtsp.RtspListener}!MessageReceived@{MessageReceived}}
+\index{MessageReceived@{MessageReceived}!Rtsp.RtspListener@{Rtsp.RtspListener}}
+\doxysubsubsection{\texorpdfstring{MessageReceived}{MessageReceived}}
+{\footnotesize\ttfamily Event\+Handler$<$\mbox{\hyperlink{class_rtsp_1_1_rtsp_chunk_event_args}{Rtsp\+Chunk\+Event\+Args}}$>$ Rtsp.\+Rtsp\+Listener.\+Message\+Received}
+
+
+
+Occurs when message is received. 
+
+
+
+Definition at line 84 of file R\+T\+S\+P\+Listener.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Here\+Link\+Video/\+R\+T\+S\+P/\mbox{\hyperlink{_r_t_s_p_listener_8cs}{R\+T\+S\+P\+Listener.\+cs}}\end{DoxyCompactItemize}
